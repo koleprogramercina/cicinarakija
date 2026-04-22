@@ -1,433 +1,493 @@
 <!DOCTYPE html>
 <html lang="sr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Čičina Rakija | Domaća Rakija – Prodaja Rakije Sremska Mitrovica, Šid, Srem</title>
-<meta name="description" content="Čičina rakija – domaća rakija iz Kukujevaca, srce Srema. Prodaja rakije Sremska Mitrovica, Šid, Ruma. Šljivovica, lozovača, travarica. Naručite odmah!">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://www.cicinarakija.rs/">
-<meta property="og:title" content="Čičina Rakija | Domaća Rakija – Prodaja Rakije Sremska Mitrovica, Šid, Srem">
-<meta property="og:description" content="Čičina rakija – domaća rakija iz Kukujevaca, srce Srema. Prodaja rakije Sremska Mitrovica, Šid, Ruma. Šljivovica, lozovača, travarica. Naručite odmah!">
-<meta property="og:locale" content="sr_RS">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Oswald:wght@300;400;500;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-<link rel="stylesheet" href="style.css">
-</head><script type="application/ld+json">
-{"@context":"https://schema.org","@type":"LocalBusiness","name":"Čičina Rakija",
-"description":"Domaća rakija iz Kukujevaca – prodaja rakije Sremska Mitrovica, Šid i okolina",
-"address":{"@type":"PostalAddress","streetAddress":"Srpskih Vladara 63A","addressLocality":"Kukujevci","addressRegion":"Vojvodina","addressCountry":"RS"},
-"geo":{"@type":"GeoCoordinates","latitude":44.9624,"longitude":19.717},
-"url":"https://www.cicinarakija.rs","telephone":"+381-XX-XXX-XXXX",
-"openingHours":"Mo-Sa 09:00-18:00","priceRange":"80 - 670 RSD"}
-</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Čičina Rakija | Domaća Rakija – Prodaja Rakije Sremska Mitrovica, Šid, Srem</title>
+  <meta name="description" content="Čičina rakija – domaća rakija iz Kukujevaca, srce Srema. Prodaja rakije Sremska Mitrovica, Šid, Ruma. Šljivovica, lozovača, travarica. Naručite odmah!">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.cicinarakija.rs/">
+  <meta property="og:title" content="Čičina Rakija | Domaća Rakija – Prodaja Rakije Sremska Mitrovica, Šid, Srem">
+  <meta property="og:description" content="Čičina rakija – domaća rakija iz Kukujevaca, srce Srema. Prodaja rakije Sremska Mitrovica, Šid, Ruma. Šljivovica, lozovača, travarica. Naručite odmah!">
+  <meta property="og:locale" content="sr_RS">
+    <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"LocalBusiness","name":"Čičina Rakija",
+  "description":"Domaća rakija iz Kukujevaca","address":{"@type":"PostalAddress",
+  "streetAddress":"Srpskih Vladara 63A","addressLocality":"Kukujevci",
+  "addressRegion":"Vojvodina","addressCountry":"RS"},
+  "url":"https://www.cicinarakija.rs","telephone":"+381-XX-XXX-XXXX"}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Oswald:wght@300;400;500;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      if (window.emailjs) emailjs.init({ publicKey: 'YOUR_PUBLIC_KEY' });
+    });
+  </script>
+</head>
 <body>
 <div class="age-gate" id="ageGate">
-    <div class="age-box">
-        <i class="fas fa-wine-bottle age-icon"></i>
-        <h2 class="age-title">ČIČINA RAKIJA</h2>
-        <p class="age-location">Kukujevci · Srem · Srbija</p>
-        <div class="age-divider"></div>
-        <p class="age-question">Da li imate 18 ili više godina?</p>
-        <div class="age-btns">
-            <button class="age-btn age-yes" id="ageYes">Da, imam</button>
-            <button class="age-btn age-no" id="ageNo">Ne</button>
-        </div>
-        <p class="age-disclaimer">Molimo konzumirajte alkohol odgovorno.<br>Prodaja maloletnicima je strogo zabranjena.</p>
+  <div class="age-box">
+    <i class="fas fa-wine-bottle age-brand-icon"></i>
+    <h1 class="age-title">ČIČINA RAKIJA</h1>
+    <p class="age-location">Kukujevci &middot; Srem &middot; Srbija</p>
+    <div class="age-divider"></div>
+    <p class="age-question">Da li imate 18 ili više godina?</p>
+    <div class="age-btns">
+      <button class="age-btn age-yes" id="ageYes" type="button">
+        <i class="fas fa-check"></i> Da, imam 18+
+      </button>
+      <button class="age-btn age-no" id="ageNo" type="button">Nemam</button>
     </div>
+    <p class="age-disclaimer">
+      <i class="fas fa-shield-alt"></i>
+      Konzumirajte alkohol odgovorno. Prodaja maloletnicima je strogo zabranjena.
+    </p>
+  </div>
 </div>
+
 <nav class="navbar" id="navbar">
-    <div class="nav-container">
-        <a href="index.html" class="nav-brand">
-            <span class="brand-icon"><i class="fas fa-wine-bottle"></i></span>
-            <span>ČIČINA RAKIJA</span>
-        </a>
-        <ul class="nav-links" id="navLinks"><li><a href="index.html" class="nav-link active">Početna</a></li>
-<li><a href="o-nama.html" class="nav-link">O nama</a></li>
-<li><a href="proizvodi.html" class="nav-link">Proizvodi</a></li>
-<li><a href="galerija.html" class="nav-link">Galerija</a></li>
-<li><a href="kontakt.html" class="nav-link">Kontakt</a></li></ul>
-        <div class="nav-actions">
-            <button class="cart-btn" id="cartToggle" aria-label="Korpa">
-                <i class="fas fa-shopping-bag"></i>
-                <span class="cart-label">Korpa</span>
-                <span class="cart-count" id="cartCount">0</span>
-            </button>
-            <button class="hamburger" id="hamburger" aria-label="Meni">
-                <span></span><span></span><span></span>
-            </button>
-        </div>
+  <div class="nav-container">
+    <a href="index.html" class="nav-brand">
+      <span class="brand-icon"><i class="fas fa-wine-bottle"></i></span>
+      <span>ČIČINA RAKIJA</span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="nav-link active">Početna</a></li>
+      <li><a href="o-nama.html" class="nav-link">O nama</a></li>
+      <li><a href="proizvodi.html" class="nav-link">Proizvodi</a></li>
+      <li><a href="galerija.html" class="nav-link">Galerija</a></li>
+      <li><a href="kontakt.html" class="nav-link">Kontakt</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="cart-btn" id="cartToggle" type="button" aria-label="Korpa">
+        <i class="fas fa-shopping-bag"></i>
+        <span class="cart-label">Korpa</span>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+      <button class="hamburger" id="hamburger" type="button" aria-label="Meni">
+        <span></span><span></span><span></span>
+      </button>
     </div>
-    <div class="nav-progress" id="navProgress"></div>
+  </div>
+  <div class="nav-progress" id="navProgress"></div>
 </nav>
 
-<!-- HERO -->
 <section id="hero" class="hero">
-    <div class="hero-bg-img hero-parallax" style="background-image:radial-gradient(ellipse at 60% 40%,rgba(196,137,42,0.09) 0%,transparent 60%),linear-gradient(160deg,#1a0c03 0%,#07050300 100%)"></div>
-    <div class="hero-grain"></div>
-    <div class="hero-vignette"></div>
-    <div class="hero-content">
-        <div class="hero-eyebrow reveal-hero" data-delay="0">
-            <span class="eyebrow-line"></span>
-            Tradicija od generacije do generacije · Kukujevci, Srem
-            <span class="eyebrow-line"></span>
-        </div>
-        <h1 class="hero-title reveal-hero" data-delay="200">
-            <span class="title-line">ČIČINA</span>
-            <span class="title-line title-italic">Rakija</span>
-        </h1>
-        <div class="hero-ornament reveal-hero" data-delay="350">
-            <span class="orn-line"></span>
-            <span class="orn-icon">✦ ✦ ✦</span>
-            <span class="orn-line"></span>
-        </div>
-        <p class="hero-sub reveal-hero" data-delay="450">Domaća rakija · Sremska Mitrovica · Šid · Ruma i okolina</p>
-        <div class="hero-actions reveal-hero" data-delay="600">
-            <a href="proizvodi.html" class="btn-primary"><span>Naruči rakiju</span> <i class="fas fa-arrow-right"></i></a>
-            <a href="o-nama.html" class="btn-ghost"><span>Naša priča</span></a>
-        </div>
+  <div class="hero-bg-img hero-parallax" style="background-image:linear-gradient(rgba(7,5,3,0.65),rgba(7,5,3,0.78)),url('https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?w=1600&q=75&auto=format&fit=crop');background-size:cover;background-position:center 40%;filter:saturate(0.7)"></div>
+  <div class="hero-grain"></div>
+  <div class="hero-vignette"></div>
+  <div class="hero-content">
+    <div class="hero-eyebrow reveal-hero" data-delay="0">
+      <span class="eyebrow-line"></span>
+      Tradicija od generacije do generacije &middot; Kukujevci, Srem
+      <span class="eyebrow-line"></span>
     </div>
-    <div class="hero-badge badge-left reveal-hero" data-delay="800">
-        <span class="badge-num">20+</span>
-        <span class="badge-txt">Godina<br>tradicije</span>
+    <h1 class="hero-title reveal-hero" data-delay="200">
+      <span class="title-line">ČIČINA</span>
+      <span class="title-line title-italic">Rakija</span>
+    </h1>
+    <div class="hero-ornament reveal-hero" data-delay="350">
+      <span class="orn-line"></span>
+      <span class="orn-icon">&#10022; &#10022; &#10022;</span>
+      <span class="orn-line"></span>
     </div>
-    <div class="hero-badge badge-right reveal-hero" data-delay="900">
-        <span class="badge-num">100%</span>
-        <span class="badge-txt">Domaće<br>voće</span>
+    <p class="hero-sub reveal-hero" data-delay="450">Domaća rakija &middot; Sremska Mitrovica &middot; Šid &middot; Ruma i okolina</p>
+    <div class="hero-actions reveal-hero" data-delay="600">
+      <a href="proizvodi.html" class="btn-primary"><span>Naruči rakiju</span> <i class="fas fa-arrow-right"></i></a>
+      <a href="o-nama.html" class="btn-ghost"><span>Naša priča</span></a>
     </div>
-    <div class="hero-scroll reveal-hero" data-delay="1100">
-        <span>Skroluj</span>
-        <div class="hero-scroll-line"></div>
-    </div>
+  </div>
+  <div class="hero-badge badge-left reveal-hero" data-delay="800">
+    <span class="badge-num">20+</span>
+    <span class="badge-txt">Godina<br>tradicije</span>
+  </div>
+  <div class="hero-badge badge-right reveal-hero" data-delay="900">
+    <span class="badge-num">100%</span>
+    <span class="badge-txt">Domaće<br>voće</span>
+  </div>
+  <div class="hero-scroll reveal-hero" data-delay="1100">
+    <span>Skroluj</span>
+    <div class="hero-scroll-line"></div>
+  </div>
 </section>
 
-<!-- DELIVERY BANNER -->
 <div class="delivery-banner">
-    <p><i class="fas fa-truck"></i> Dostava na adresu širom Srbije &nbsp;·&nbsp; Lično preuzimanje u Kukujevcima besplatno</p>
+  <p><i class="fas fa-truck"></i> Dostava na adresu širom Srbije &nbsp;&middot;&nbsp; Lično preuzimanje u Kukujevcima besplatno</p>
 </div>
 
-<!-- MARQUEE -->
 <div class="marquee-strip">
-    <div class="marquee-track">
-        <span>Šljivovica</span><span class="m-dot">✦</span>
-        <span>Lozovača</span><span class="m-dot">✦</span>
-        <span>Travarica</span><span class="m-dot">✦</span>
-        <span>Palinkovac</span><span class="m-dot">✦</span>
-        <span>Prepečenica</span><span class="m-dot">✦</span>
-        <span>Srem</span><span class="m-dot">✦</span>
-        <span>Kukujevci</span><span class="m-dot">✦</span>
-        <span>Sremska Mitrovica</span><span class="m-dot">✦</span>
-        <span>Šid</span><span class="m-dot">✦</span>
-        <span>Bakarni kotao</span><span class="m-dot">✦</span>
-        <span>Domaće voće</span><span class="m-dot">✦</span>
-        <span>Šljivovica</span><span class="m-dot">✦</span>
-        <span>Lozovača</span><span class="m-dot">✦</span>
-        <span>Travarica</span><span class="m-dot">✦</span>
-        <span>Palinkovac</span><span class="m-dot">✦</span>
-        <span>Prepečenica</span><span class="m-dot">✦</span>
-        <span>Srem</span><span class="m-dot">✦</span>
-        <span>Kukujevci</span><span class="m-dot">✦</span>
-        <span>Sremska Mitrovica</span><span class="m-dot">✦</span>
-        <span>Šid</span><span class="m-dot">✦</span>
-        <span>Bakarni kotao</span><span class="m-dot">✦</span>
-        <span>Domaće voće</span><span class="m-dot">✦</span>
-    </div>
+  <div class="marquee-track">
+    <span>Šljivovica</span><span class="m-dot">&#10022;</span>
+    <span>Lozovača</span><span class="m-dot">&#10022;</span>
+    <span>Travarica</span><span class="m-dot">&#10022;</span>
+    <span>Palinkovac</span><span class="m-dot">&#10022;</span>
+    <span>Prepečenica</span><span class="m-dot">&#10022;</span>
+    <span>Srem</span><span class="m-dot">&#10022;</span>
+    <span>Kukujevci</span><span class="m-dot">&#10022;</span>
+    <span>Sremska Mitrovica</span><span class="m-dot">&#10022;</span>
+    <span>Šid</span><span class="m-dot">&#10022;</span>
+    <span>Bakarni kotao</span><span class="m-dot">&#10022;</span>
+    <span>Domaće voće</span><span class="m-dot">&#10022;</span>
+    <span>Šljivovica</span><span class="m-dot">&#10022;</span>
+    <span>Lozovača</span><span class="m-dot">&#10022;</span>
+    <span>Travarica</span><span class="m-dot">&#10022;</span>
+    <span>Palinkovac</span><span class="m-dot">&#10022;</span>
+    <span>Prepečenica</span><span class="m-dot">&#10022;</span>
+    <span>Srem</span><span class="m-dot">&#10022;</span>
+    <span>Kukujevci</span><span class="m-dot">&#10022;</span>
+    <span>Sremska Mitrovica</span><span class="m-dot">&#10022;</span>
+    <span>Šid</span><span class="m-dot">&#10022;</span>
+    <span>Bakarni kotao</span><span class="m-dot">&#10022;</span>
+    <span>Domaće voće</span><span class="m-dot">&#10022;</span>
+  </div>
 </div>
 
-<!-- ZASTO MI -->
 <section class="why-us">
-    <div class="container">
-        <div class="sec-header reveal">
-            <span class="sec-label">Zašto Čičina Rakija</span>
-            <h2 class="sec-title">Pravi ukus <em>Srema</em></h2>
-            <div class="sec-rule"></div>
-        </div>
-        <div class="why-grid">
-            <div class="why-card reveal" data-delay="0">
-                <i class="fas fa-seedling why-icon"></i>
-                <div class="why-title">Domaće voće</div>
-                <p class="why-desc">Isključivo voće iz naših voćnjaka u Kukujevcima – bez kupovnog sirovog materijala.</p>
-            </div>
-            <div class="why-card reveal" data-delay="100">
-                <i class="fas fa-fire-alt why-icon"></i>
-                <div class="why-title">Bakarni kotao</div>
-                <p class="why-desc">Tradicionalna destilacija u bakarnom kotlu po recepturi staroj više od 20 godina.</p>
-            </div>
-            <div class="why-card reveal" data-delay="200">
-                <i class="fas fa-truck why-icon"></i>
-                <div class="why-title">Dostava na adresu</div>
-                <p class="why-desc">Dostavljamo u Sremsku Mitrovicu, Šid, Rumu, Morović, Bingulu i celu Srbiju.</p>
-            </div>
-            <div class="why-card reveal" data-delay="300">
-                <i class="fas fa-handshake why-icon"></i>
-                <div class="why-title">Lično preuzimanje</div>
-                <p class="why-desc">Posetite nas u Kukujevcima – besplatno preuzimanje uz dobrodošlicu uz čašicu!</p>
-            </div>
-        </div>
+  <div class="container">
+    <div class="sec-header reveal">
+      <span class="sec-label">Zašto Čičina Rakija</span>
+      <h2 class="sec-title">Pravi ukus <em>Srema</em></h2>
+      <div class="sec-rule"></div>
     </div>
+    <div class="why-grid">
+      <div class="why-card reveal" data-delay="0">
+        <i class="fas fa-seedling why-icon"></i>
+        <div class="why-title">Domaće voće</div>
+        <p class="why-desc">Isključivo voće iz naših voćnjaka u Kukujevcima – bez kupovnog sirovog materijala.</p>
+      </div>
+      <div class="why-card reveal" data-delay="80">
+        <i class="fas fa-fire-alt why-icon"></i>
+        <div class="why-title">Bakarni kotao</div>
+        <p class="why-desc">Tradicionalna destilacija u bakarnom kotlu po recepturi staroj više od 20 godina.</p>
+      </div>
+      <div class="why-card reveal" data-delay="160">
+        <i class="fas fa-truck why-icon"></i>
+        <div class="why-title">Dostava na adresu</div>
+        <p class="why-desc">Dostavljamo u Sremsku Mitrovicu, Šid, Rumu, Morović, Bingulu i celu Srbiju.</p>
+      </div>
+      <div class="why-card reveal" data-delay="240">
+        <i class="fas fa-handshake why-icon"></i>
+        <div class="why-title">Lično preuzimanje</div>
+        <p class="why-desc">Posetite nas u Kukujevcima – besplatno preuzimanje uz dobrodošlicu uz čašicu!</p>
+      </div>
+    </div>
+  </div>
 </section>
 
-<!-- ISTAKNUTI PROIZVODI -->
 <section class="featured-products">
-    <div class="container">
-        <div class="sec-header reveal">
-            <span class="sec-label">Naša ponuda</span>
-            <h2 class="sec-title">Istaknuti <em>proizvodi</em></h2>
-            <div class="sec-rule"></div>
-            <p class="sec-sub">Domaća rakija destilisana u bakarnom kotlu – naručite odmah uz dostavu</p>
-        </div>
-        <div class="products-grid featured-grid" id="productsGridHome"></div>
-        <div style="text-align:center;margin-top:3rem" class="reveal">
-            <a href="proizvodi.html" class="btn-primary"><span>Pogledajte sve proizvode</span> <i class="fas fa-arrow-right"></i></a>
-        </div>
+  <div class="container">
+    <div class="sec-header reveal">
+      <span class="sec-label">Naša ponuda</span>
+      <h2 class="sec-title">Istaknuti <em>proizvodi</em></h2>
+      <div class="sec-rule"></div>
+      <p class="sec-sub">Domaća rakija destilisana u bakarnom kotlu – naručite odmah uz dostavu</p>
     </div>
+    <div class="products-grid featured-grid" id="productsGridHome"></div>
+    <div style="text-align:center;margin-top:3rem" class="reveal">
+      <a href="proizvodi.html" class="btn-primary"><span>Pogledajte sve proizvode</span> <i class="fas fa-arrow-right"></i></a>
+    </div>
+  </div>
 </section>
 
-<!-- O NAMA KRATKO -->
 <section class="about" id="about">
-    <div class="container">
-        <div class="about-grid">
-            <div class="about-visual">
-                <div class="about-img-main reveal" data-dir="left">
-                    <div style="width:100%;height:420px;background:linear-gradient(135deg,var(--brown-mid),var(--brown-deep));display:flex;align-items:center;justify-content:center;flex-direction:column;gap:1.2rem;">
-                        <i class="fas fa-fire-alt" style="font-size:5rem;color:rgba(196,137,42,0.2)"></i>
-                        <span style="font-family:var(--font-ui);font-size:0.72rem;letter-spacing:0.2em;color:var(--muted);text-transform:uppercase">Slika destilerije</span>
-                    </div>
-                    <div class="img-label">Bakarni kotao · Kukujevci, Srem</div>
-                </div>
-                <div class="about-years-badge">
-                    <span class="yb-num">20+</span>
-                    <span class="yb-txt">godina<br>tradicije</span>
-                </div>
-            </div>
-            <div class="about-text">
-                <div class="reveal" data-dir="right">
-                    <span class="sec-label">Ko smo mi</span>
-                    <h2 class="sec-title">Tradicija<br><em>uklesana u bakar</em></h2>
-                    <div class="sec-rule"></div>
-                </div>
-                <div class="reveal" data-dir="right" data-delay="100">
-                    <p>U malom mestu Kukujevci, u srcu Srema, već generacijama čuvamo tajnu izuzetne rakije. Čičina rakija nije samo piće – to je priča o porodici, tradiciji i strasti prema savršenstvu.</p>
-                    <p>Svaka kap naše rakije nosi dušu sremske zemlje. Od izbora najkvalitetnijeg voća iz naših voćnjaka, do tradicionalne destilacije u bakarnom kotlu – svaki korak je ritual koji poštujemo decenijama.</p>
-                </div>
-                <div class="about-feats reveal" data-dir="right" data-delay="200">
-                    <div class="feat">
-                        <div class="feat-icon"><i class="fas fa-seedling"></i></div>
-                        <h4>Domaće voće</h4>
-                        <p>Naši voćnjaci u Kukujevcima</p>
-                    </div>
-                    <div class="feat">
-                        <div class="feat-icon"><i class="fas fa-fire"></i></div>
-                        <h4>Bakarna destilacija</h4>
-                        <p>Stara zanatska metoda</p>
-                    </div>
-                    <div class="feat">
-                        <div class="feat-icon"><i class="fas fa-award"></i></div>
-                        <h4>Porodična tajna</h4>
-                        <p>Recept kroz generacije</p>
-                    </div>
-                </div>
-                <div class="reveal" data-dir="right" data-delay="300" style="margin-top:2rem">
-                    <a href="o-nama.html" class="btn-ghost"><span>Saznajte više o nama</span> <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-visual">
+        <div class="about-img-main reveal" data-dir="left">
+          <div style="width:100%;height:420px;background:linear-gradient(135deg,var(--brown-mid),var(--brown-deep));display:flex;align-items:center;justify-content:center;flex-direction:column;gap:1.2rem;">
+            <i class="fas fa-fire-alt" style="font-size:5rem;color:rgba(196,137,42,0.2)"></i>
+            <span style="font-family:var(--font-ui);font-size:0.72rem;letter-spacing:0.2em;color:var(--muted);text-transform:uppercase">Slika destilerije</span>
+          </div>
+          <div class="img-label">Bakarni kotao &middot; Kukujevci, Srem</div>
         </div>
+        <div class="about-years-badge">
+          <span class="yb-num">20+</span>
+          <span class="yb-txt">godina<br>tradicije</span>
+        </div>
+      </div>
+      <div class="about-text">
+        <div class="reveal" data-dir="right">
+          <span class="sec-label">Ko smo mi</span>
+          <h2 class="sec-title">Tradicija<br><em>uklesana u bakar</em></h2>
+          <div class="sec-rule"></div>
+        </div>
+        <div class="reveal" data-dir="right" data-delay="100">
+          <p>U malom mestu Kukujevci, u srcu Srema, već generacijama čuvamo tajnu izuzetne rakije. Čičina rakija nije samo piće – to je priča o porodici, tradiciji i strasti prema savršenstvu.</p>
+          <p>Svaka kap naše rakije nosi dušu sremske zemlje. Od izbora najkvalitetnijeg voća do tradicionalne destilacije u bakarnom kotlu – svaki korak je ritual koji poštujemo decenijama.</p>
+        </div>
+        <div class="about-feats reveal" data-dir="right" data-delay="200">
+          <div class="feat"><div class="feat-icon"><i class="fas fa-seedling"></i></div><h4>Domaće voće</h4><p>Naši voćnjaci u Kukujevcima</p></div>
+          <div class="feat"><div class="feat-icon"><i class="fas fa-fire"></i></div><h4>Bakarna destilacija</h4><p>Stara zanatska metoda</p></div>
+          <div class="feat"><div class="feat-icon"><i class="fas fa-award"></i></div><h4>Porodična tajna</h4><p>Recept kroz generacije</p></div>
+        </div>
+        <div class="reveal" data-dir="right" data-delay="300" style="margin-top:2rem">
+          <a href="o-nama.html" class="btn-ghost"><span>Saznajte više o nama</span> <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
     </div>
+  </div>
 </section>
 
-<!-- KONTAKT QUICK -->
-<section id="contact" class="contact">
-    <div class="container">
-        <div class="sec-header reveal">
-            <span class="sec-label">Naručite odmah</span>
-            <h2 class="sec-title">Kontaktirajte <em>nas</em></h2>
-            <div class="sec-rule"></div>
-            <p class="sec-sub">Sremska Mitrovica, Šid, Ruma, Morović, Bingula i cela Srbija – dostavljamo na vašu adresu</p>
-        </div>
-        <div style="display:flex;flex-wrap:wrap;gap:1rem;justify-content:center;margin-bottom:3rem" class="reveal">
-            <a href="tel:+381XXXXXXXXX" class="btn-primary"><i class="fas fa-phone"></i> <span>Pozovite nas</span></a>
-            <a href="kontakt.html" class="btn-ghost"><span>Pišite nam</span> <i class="fas fa-arrow-right"></i></a>
-        </div>
-        <div style="display:flex;flex-wrap:wrap;gap:1rem;justify-content:center" class="reveal" data-delay="100">
-            <div class="contact-card" style="max-width:250px;flex:1;min-width:200px">
-                <div class="cc-icon"><i class="fas fa-map-marker-alt"></i></div>
-                <div><h4>Lokacija</h4><p>Kukujevci, Srpskih Vladara 63A<br>Srem, Srbija</p></div>
-            </div>
-            <div class="contact-card" style="max-width:250px;flex:1;min-width:200px">
-                <div class="cc-icon"><i class="fas fa-clock"></i></div>
-                <div><h4>Radno vreme</h4><p>Pon–Sub: 09:00–18:00<br>Ned: po dogovoru</p></div>
-            </div>
-            <div class="contact-card" style="max-width:250px;flex:1;min-width:200px">
-                <div class="cc-icon"><i class="fas fa-truck"></i></div>
-                <div><h4>Dostava</h4><p>Sremska Mitrovica, Šid, Ruma<br>i cela Srbija</p></div>
-            </div>
-        </div>
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="sec-header reveal">
+      <span class="sec-label">Naručite odmah</span>
+      <h2 class="sec-title">Kontaktirajte <em>nas</em></h2>
+      <div class="sec-rule"></div>
+      <p class="sec-sub">Sremska Mitrovica, Šid, Ruma, Morović, Bingula i cela Srbija – dostavljamo na vašu adresu</p>
     </div>
+    <div style="display:flex;flex-wrap:wrap;gap:1rem;justify-content:center;margin-bottom:3rem" class="reveal">
+      <a href="tel:+381XXXXXXXXX" class="btn-primary"><i class="fas fa-phone"></i> <span>Pozovite nas</span></a>
+      <a href="kontakt.html" class="btn-ghost"><span>Pišite nam</span> <i class="fas fa-arrow-right"></i></a>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;gap:1rem;justify-content:center" class="reveal" data-delay="100">
+      <div class="contact-card" style="flex:1;min-width:200px;max-width:240px">
+        <div class="cc-icon"><i class="fas fa-map-marker-alt"></i></div>
+        <div><h4>Lokacija</h4><p>Kukujevci, Srpskih Vladara 63A<br>Srem, Srbija</p></div>
+      </div>
+      <div class="contact-card" style="flex:1;min-width:200px;max-width:240px">
+        <div class="cc-icon"><i class="fas fa-clock"></i></div>
+        <div><h4>Radno vreme</h4><p>Pon&ndash;Sub: 09:00&ndash;18:00<br>Ned: po dogovoru</p></div>
+      </div>
+      <div class="contact-card" style="flex:1;min-width:200px;max-width:240px">
+        <div class="cc-icon"><i class="fas fa-truck"></i></div>
+        <div><h4>Dostava</h4><p>Sremska Mitrovica, Šid, Ruma<br>i cela Srbija</p></div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <footer class="footer">
-    <div class="footer-watermark">ČIČINA RAKIJA</div>
-    <div class="container">
-        <div class="footer-grid">
-            <div class="footer-brand">
-                <h3>ČIČINA RAKIJA</h3>
-                <p>Domaća rakija iz srca Srema.<br>Kukujevci, Srpskih Vladara 63A</p>
-                <p style="margin-top:0.6rem;font-size:0.82rem;color:var(--muted)">Prodaja rakije: Sremska Mitrovica · Šid · Ruma · Morović · Bingula · Srbija</p>
-                <div class="socials" style="margin-top:1.2rem">
-                    <a href="#" class="soc-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="soc-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="soc-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-                </div>
-            </div>
-            <div class="footer-nav">
-                <h4>Stranice</h4>
-                <ul>
-                    <li><a href="index.html">Početna</a></li>
-                    <li><a href="o-nama.html">O nama</a></li>
-                    <li><a href="proizvodi.html">Proizvodi</a></li>
-                    <li><a href="galerija.html">Galerija</a></li>
-                    <li><a href="kontakt.html">Kontakt</a></li>
-                </ul>
-            </div>
-            <div class="footer-products">
-                <h4>Rakije</h4>
-                <ul>
-                    <li><a href="proizvodi.html">Šljivovica</a></li>
-                    <li><a href="proizvodi.html">Lozovača</a></li>
-                    <li><a href="proizvodi.html">Travarica</a></li>
-                    <li><a href="proizvodi.html">Palinkovac</a></li>
-                    <li><a href="proizvodi.html">Prepečenica</a></li>
-                    <li><a href="proizvodi.html">Čičina Vodka</a></li>
-                </ul>
-            </div>
+  <div class="footer-watermark">ČIČINA RAKIJA</div>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>ČIČINA RAKIJA</h3>
+        <p>Domaća rakija iz srca Srema.<br>Kukujevci, Srpskih Vladara 63A</p>
+        <p style="margin-top:0.6rem;font-size:0.82rem;color:var(--muted)">Prodaja: Sremska Mitrovica &middot; Šid &middot; Ruma &middot; Morović &middot; Srbija</p>
+        <div class="socials" style="margin-top:1.2rem">
+          <a href="#" class="soc-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="soc-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="soc-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 D.O.O. Čičina Rakija, Kukujevci. Sva prava zadržana.</p>
-            <p>Konzumiranje alkohola može štetiti vašem zdravlju. Prodaja maloletnim licima je zabranjena.</p>
-        </div>
+      </div>
+      <div class="footer-nav">
+        <h4>Stranice</h4>
+        <ul>
+          <li><a href="index.html">Početna</a></li>
+          <li><a href="o-nama.html">O nama</a></li>
+          <li><a href="proizvodi.html">Proizvodi</a></li>
+          <li><a href="galerija.html">Galerija</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </div>
+      <div class="footer-products">
+        <h4>Rakije</h4>
+        <ul>
+          <li><a href="proizvodi.html">Šljivovica</a></li>
+          <li><a href="proizvodi.html">Lozovača</a></li>
+          <li><a href="proizvodi.html">Travarica</a></li>
+          <li><a href="proizvodi.html">Palinkovac</a></li>
+          <li><a href="proizvodi.html">Prepečenica</a></li>
+          <li><a href="proizvodi.html">Čičina Vodka</a></li>
+        </ul>
+      </div>
     </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 D.O.O. Čičina Rakija, Kukujevci. Sva prava zadržana.</p>
+      <p>Konzumiranje alkohola može štetiti vašem zdravlju. Prodaja maloletnim licima je zabranjena.</p>
+    </div>
+  </div>
 </footer>
 
 <div class="overlay" id="cartOverlay"></div>
 <aside class="cart-sidebar" id="cartSidebar">
-    <div class="cart-head">
-        <h3>VAŠA KORPA</h3>
-        <button class="icon-btn" id="cartClose"><i class="fas fa-times"></i></button>
-    </div>
-    <div class="cart-items" id="cartItemsEl"></div>
-    <div class="cart-foot">
-        <div class="cart-total-row">
-            <span>Ukupno</span>
-            <strong id="cartTotalEl">0 RSD</strong>
-        </div>
-        <p class="cart-note"><i class="fas fa-info-circle"></i> Dostava se obračunava pri porudžbini</p>
-        <button class="btn-checkout" id="goCheckout" disabled>
-            <span>Nastavi na porudžbinu</span> <i class="fas fa-arrow-right"></i>
-        </button>
-    </div>
+  <div class="cart-head">
+    <h3>VAŠA KORPA</h3>
+    <button class="icon-btn" id="cartClose" type="button" aria-label="Zatvori"><i class="fas fa-times"></i></button>
+  </div>
+  <div class="cart-items" id="cartItemsEl"></div>
+  <div class="cart-foot">
+    <div class="cart-total-row"><span>Ukupno</span><strong id="cartTotalEl">0 RSD</strong></div>
+    <p class="cart-note"><i class="fas fa-info-circle"></i> Dostava se obračunava pri porudžbini</p>
+    <button class="btn-checkout" id="goCheckout" type="button" disabled>
+      <span>Nastavi na porudžbinu</span> <i class="fas fa-arrow-right"></i>
+    </button>
+  </div>
 </aside>
+
 <div class="overlay" id="checkoutOverlay"></div>
-<div class="checkout-modal" id="checkoutModal">
-    <div class="checkout-box">
-        <div class="checkout-head">
-            <h2>PORUDŽBINA</h2>
-            <button class="icon-btn" id="checkoutClose"><i class="fas fa-times"></i></button>
-        </div>
-        <div class="checkout-body">
-            <div class="steps" id="stepsEl">
-                <div class="step active" data-step="1"><div class="step-dot">1</div><div class="step-label">Dostava</div></div>
-                <div class="step-connector"></div>
-                <div class="step" data-step="2"><div class="step-dot">2</div><div class="step-label">Adresa</div></div>
-                <div class="step-connector"></div>
-                <div class="step" data-step="3"><div class="step-dot">3</div><div class="step-label">Plaćanje</div></div>
-                <div class="step-connector"></div>
-                <div class="step" data-step="4"><div class="step-dot">4</div><div class="step-label">Pregled</div></div>
-            </div>
-            <div class="form-step active" id="step1">
-                <p class="step-title">Izaberite način dostave</p>
-                <div class="delivery-opts">
-                    <label class="del-opt"><input type="radio" name="delivery" value="courier" checked>
-                        <div class="del-card"><i class="fas fa-truck"></i><div><strong>Kurirska služba</strong><span>2–4 radna dana · 490 RSD</span></div><div class="del-check"><i class="fas fa-check"></i></div></div></label>
-                    <label class="del-opt"><input type="radio" name="delivery" value="pickup">
-                        <div class="del-card"><i class="fas fa-store"></i><div><strong>Lično preuzimanje</strong><span>Kukujevci · Besplatno</span></div><div class="del-check"><i class="fas fa-check"></i></div></div></label>
-                </div>
-                <div class="form-nav"><div></div><button class="btn-next" id="step1Next"><span>Sledeći</span> <i class="fas fa-arrow-right"></i></button></div>
-            </div>
-            <div class="form-step" id="step2">
-                <p class="step-title">Kontakt podaci</p>
-                <div class="form-row two">
-                    <div class="form-group"><label>Ime <span class="req">*</span></label><input type="text" id="firstName" autocomplete="given-name" placeholder="Vaše ime"><span class="field-err" id="err-firstName">Obavezno</span></div>
-                    <div class="form-group"><label>Prezime <span class="req">*</span></label><input type="text" id="lastName" autocomplete="family-name" placeholder="Prezime"><span class="field-err" id="err-lastName">Obavezno</span></div>
-                </div>
-                <div class="form-row two">
-                    <div class="form-group"><label>Telefon <span class="req">*</span></label><input type="tel" id="phone" autocomplete="tel" placeholder="+381 60 000 0000"><span class="field-err" id="err-phone">Obavezno</span></div>
-                    <div class="form-group"><label>E-mail <span class="req">*</span></label><input type="email" id="email" autocomplete="email" placeholder="vas@email.rs"><span class="field-err" id="err-email">Obavezno</span></div>
-                </div>
-                <div id="addressSection">
-                    <p class="step-title" style="margin-top:1.5rem">Adresa dostave</p>
-                    <div class="form-row one"><div class="form-group"><label>Ulica i broj <span class="req">*</span></label><input type="text" id="street" autocomplete="street-address" placeholder="Kralja Petra 15"><span class="field-err" id="err-street">Obavezno</span></div></div>
-                    <div class="form-row two">
-                        <div class="form-group"><label>Grad <span class="req">*</span></label><input type="text" id="city" autocomplete="address-level2" placeholder="Sremska Mitrovica"><span class="field-err" id="err-city">Obavezno</span></div>
-                        <div class="form-group"><label>Poštanski broj <span class="req">*</span></label><input type="text" id="postal" autocomplete="postal-code" placeholder="22000"><span class="field-err" id="err-postal">Obavezno</span></div>
-                    </div>
-                    <div class="form-row one"><div class="form-group"><label>Napomena</label><textarea id="note" rows="3" placeholder="Posebne instrukcije..."></textarea></div></div>
-                </div>
-                <div class="form-nav">
-                    <button class="btn-prev" id="step2Prev"><i class="fas fa-arrow-left"></i> <span>Nazad</span></button>
-                    <button class="btn-next" id="step2Next"><span>Sledeći</span> <i class="fas fa-arrow-right"></i></button>
-                </div>
-            </div>
-            <div class="form-step" id="step3">
-                <p class="step-title">Način plaćanja</p>
-                <div class="pay-opts">
-                    <label class="pay-opt"><input type="radio" name="payment" value="cod" checked>
-                        <div class="pay-card"><i class="fas fa-money-bill-wave"></i><div><strong>Plaćanje pouzećem</strong><span>Keš pri isporuci</span></div><div class="del-check"><i class="fas fa-check"></i></div></div></label>
-                    <label class="pay-opt"><input type="radio" name="payment" value="transfer">
-                        <div class="pay-card"><i class="fas fa-university"></i><div><strong>Bankovna uplata</strong><span>Pre isporuke</span></div><div class="del-check"><i class="fas fa-check"></i></div></div></label>
-                    <label class="pay-opt"><input type="radio" name="payment" value="card">
-                        <div class="pay-card"><i class="fas fa-credit-card"></i><div><strong>Kartica</strong><span>Na licu mesta</span></div><div class="del-check"><i class="fas fa-check"></i></div></div></label>
-                </div>
-                <div class="form-nav">
-                    <button class="btn-prev" id="step3Prev"><i class="fas fa-arrow-left"></i> <span>Nazad</span></button>
-                    <button class="btn-next" id="step3Next"><span>Sledeći</span> <i class="fas fa-arrow-right"></i></button>
-                </div>
-            </div>
-            <div class="form-step" id="step4">
-                <p class="step-title">Pregled porudžbine</p>
-                <div class="order-summary"><div class="os-head">Stavke</div><div id="summaryItems"></div><div class="os-divider"></div><div class="os-row"><span>Dostava</span><span id="summaryDelivery">—</span></div><div class="os-divider"></div><div class="os-total"><span>Ukupno za plaćanje</span><strong id="summaryTotal">—</strong></div></div>
-                <div class="order-summary" style="margin-top:1rem"><div class="os-head">Detalji</div><div class="os-row"><span>Ime</span><span id="revName">—</span></div><div class="os-row"><span>Telefon</span><span id="revPhone">—</span></div><div class="os-row"><span>Adresa</span><span id="revAddr">—</span></div><div class="os-row"><span>Dostava</span><span id="revDel">—</span></div><div class="os-row"><span>Plaćanje</span><span id="revPay">—</span></div></div>
-                <div class="form-nav">
-                    <button class="btn-prev" id="step4Prev"><i class="fas fa-arrow-left"></i> <span>Nazad</span></button>
-                    <button class="btn-submit" id="submitOrder"><i class="fas fa-check"></i> <span>Potvrdi porudžbinu</span></button>
-                </div>
-            </div>
-            <div class="order-confirm" id="orderConfirm">
-                <div class="confirm-anim"><svg class="checkmark" viewBox="0 0 52 52"><circle class="checkmark-circle" cx="26" cy="26" r="25" fill="none"/><path class="checkmark-check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/></svg></div>
-                <h3>HVALA!</h3>
-                <p class="order-num" id="confirmNum">Broj porudžbine: #CR-000000</p>
-                <p>Vaša porudžbina je primljena. Kontaktiraćemo vas uskoro radi potvrde i dogovora oko dostave.</p>
-                <button class="btn-next" id="confirmClose">Zatvori</button>
-            </div>
-        </div>
+<div class="checkout-modal" id="checkoutModal" role="dialog" aria-modal="true">
+  <div class="checkout-box">
+    <div class="checkout-head">
+      <h2>PORUDŽBINA</h2>
+      <button class="icon-btn" id="checkoutClose" type="button" aria-label="Zatvori"><i class="fas fa-times"></i></button>
     </div>
+    <div class="checkout-body">
+      <div class="steps" id="stepsEl">
+        <div class="step active" data-step="1"><div class="step-dot">1</div><div class="step-label">Dostava</div></div>
+        <div class="step-connector"></div>
+        <div class="step" data-step="2"><div class="step-dot">2</div><div class="step-label">Adresa</div></div>
+        <div class="step-connector"></div>
+        <div class="step" data-step="3"><div class="step-dot">3</div><div class="step-label">Plaćanje</div></div>
+        <div class="step-connector"></div>
+        <div class="step" data-step="4"><div class="step-dot">4</div><div class="step-label">Pregled</div></div>
+      </div>
+
+      <div class="form-step active" id="step1">
+        <p class="step-title">Izaberite način dostave</p>
+        <div class="delivery-opts">
+          <label class="del-opt">
+            <input type="radio" name="delivery" value="courier" checked>
+            <div class="del-card"><i class="fas fa-truck"></i><div><strong>Kurirska služba</strong><span>2&ndash;4 radna dana &middot; 490 RSD</span></div><div class="del-check"><i class="fas fa-check"></i></div></div>
+          </label>
+          <label class="del-opt">
+            <input type="radio" name="delivery" value="pickup">
+            <div class="del-card"><i class="fas fa-store"></i><div><strong>Lično preuzimanje</strong><span>Kukujevci &middot; Besplatno</span></div><div class="del-check"><i class="fas fa-check"></i></div></div>
+          </label>
+        </div>
+        <div class="form-nav">
+          <div></div>
+          <button class="btn-next" id="step1Next" type="button"><span>Sledeći</span> <i class="fas fa-arrow-right"></i></button>
+        </div>
+      </div>
+
+      <div class="form-step" id="step2">
+        <p class="step-title">Kontakt podaci</p>
+        <div class="form-row two">
+          <div class="form-group">
+            <label for="firstName">Ime <span class="req">*</span></label>
+            <input type="text" id="firstName" autocomplete="given-name" placeholder="Vaše ime">
+            <span class="field-err" id="err-firstName">Obavezno polje</span>
+          </div>
+          <div class="form-group">
+            <label for="lastName">Prezime <span class="req">*</span></label>
+            <input type="text" id="lastName" autocomplete="family-name" placeholder="Prezime">
+            <span class="field-err" id="err-lastName">Obavezno polje</span>
+          </div>
+        </div>
+        <div class="form-row two">
+          <div class="form-group">
+            <label for="phone">Telefon <span class="req">*</span></label>
+            <input type="tel" id="phone" autocomplete="tel" placeholder="+381 60 000 0000">
+            <span class="field-err" id="err-phone">Obavezno polje</span>
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail <span class="req">*</span></label>
+            <input type="email" id="email" autocomplete="email" placeholder="vas@email.rs">
+            <span class="field-err" id="err-email">Obavezno polje</span>
+          </div>
+        </div>
+        <div id="addressSection">
+          <p class="step-title" style="margin-top:1.5rem">Adresa dostave</p>
+          <div class="form-row one">
+            <div class="form-group">
+              <label for="street">Ulica i broj <span class="req">*</span></label>
+              <input type="text" id="street" autocomplete="street-address" placeholder="Kralja Petra 15">
+              <span class="field-err" id="err-street">Obavezno polje</span>
+            </div>
+          </div>
+          <div class="form-row two">
+            <div class="form-group">
+              <label for="city">Grad <span class="req">*</span></label>
+              <input type="text" id="city" autocomplete="address-level2" placeholder="Sremska Mitrovica">
+              <span class="field-err" id="err-city">Obavezno polje</span>
+            </div>
+            <div class="form-group">
+              <label for="postal">Poštanski broj <span class="req">*</span></label>
+              <input type="text" id="postal" autocomplete="postal-code" placeholder="22000">
+              <span class="field-err" id="err-postal">Obavezno polje</span>
+            </div>
+          </div>
+          <div class="form-row one">
+            <div class="form-group">
+              <label for="note">Napomena</label>
+              <textarea id="note" rows="3" placeholder="Posebne instrukcije za dostavu..."></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="form-nav">
+          <button class="btn-prev" id="step2Prev" type="button"><i class="fas fa-arrow-left"></i> <span>Nazad</span></button>
+          <button class="btn-next" id="step2Next" type="button"><span>Sledeći</span> <i class="fas fa-arrow-right"></i></button>
+        </div>
+      </div>
+
+      <div class="form-step" id="step3">
+        <p class="step-title">Način plaćanja</p>
+        <div class="pay-opts">
+          <label class="pay-opt">
+            <input type="radio" name="payment" value="cod" checked>
+            <div class="pay-card"><i class="fas fa-money-bill-wave"></i><div><strong>Plaćanje pouzećem</strong><span>Keš pri isporuci</span></div><div class="del-check"><i class="fas fa-check"></i></div></div>
+          </label>
+          <label class="pay-opt">
+            <input type="radio" name="payment" value="transfer">
+            <div class="pay-card"><i class="fas fa-university"></i><div><strong>Bankovna uplata</strong><span>Pre isporuke</span></div><div class="del-check"><i class="fas fa-check"></i></div></div>
+          </label>
+          <label class="pay-opt">
+            <input type="radio" name="payment" value="card">
+            <div class="pay-card"><i class="fas fa-credit-card"></i><div><strong>Kartica</strong><span>Na licu mesta pri preuzimanju</span></div><div class="del-check"><i class="fas fa-check"></i></div></div>
+          </label>
+        </div>
+        <div class="form-nav">
+          <button class="btn-prev" id="step3Prev" type="button"><i class="fas fa-arrow-left"></i> <span>Nazad</span></button>
+          <button class="btn-next" id="step3Next" type="button"><span>Sledeći</span> <i class="fas fa-arrow-right"></i></button>
+        </div>
+      </div>
+
+      <div class="form-step" id="step4">
+        <p class="step-title">Pregled porudžbine</p>
+        <div class="order-summary">
+          <div class="os-head">Stavke</div>
+          <div id="summaryItems"></div>
+          <div class="os-divider"></div>
+          <div class="os-row"><span>Dostava</span><span id="summaryDelivery">&mdash;</span></div>
+          <div class="os-divider"></div>
+          <div class="os-total"><span>Ukupno za plaćanje</span><strong id="summaryTotal">&mdash;</strong></div>
+        </div>
+        <div class="order-summary" style="margin-top:1rem">
+          <div class="os-head">Detalji dostave</div>
+          <div class="os-row"><span>Ime i prezime</span><span id="revName">&mdash;</span></div>
+          <div class="os-row"><span>Telefon</span><span id="revPhone">&mdash;</span></div>
+          <div class="os-row"><span>Adresa</span><span id="revAddr">&mdash;</span></div>
+          <div class="os-row"><span>Dostava</span><span id="revDel">&mdash;</span></div>
+          <div class="os-row"><span>Plaćanje</span><span id="revPay">&mdash;</span></div>
+        </div>
+        <div class="form-nav">
+          <button class="btn-prev" id="step4Prev" type="button"><i class="fas fa-arrow-left"></i> <span>Nazad</span></button>
+          <button class="btn-submit" id="submitOrder" type="button"><i class="fas fa-check"></i> <span>Potvrdi porudžbinu</span></button>
+        </div>
+      </div>
+
+      <div class="order-confirm" id="orderConfirm">
+        <div class="confirm-anim">
+          <svg class="checkmark" viewBox="0 0 52 52">
+            <circle class="checkmark-circle" cx="26" cy="26" r="25" fill="none"/>
+            <path class="checkmark-check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+          </svg>
+        </div>
+        <h3>HVALA!</h3>
+        <p class="order-num" id="confirmNum">Broj porudžbine: #CR-000000</p>
+        <p>Vaša porudžbina je primljena. Kontaktiraćemo vas uskoro radi potvrde i dogovora oko dostave.</p>
+        <button class="btn-next" id="confirmClose" type="button">Zatvori</button>
+      </div>
+    </div>
+  </div>
 </div>
-<div class="lightbox" id="lightbox">
-    <button class="icon-btn lightbox-close" id="lightboxClose"><i class="fas fa-times"></i></button>
-    <div class="lightbox-nav lightbox-prev" id="lightboxPrev"><i class="fas fa-chevron-left"></i></div>
-    <img class="lightbox-img" id="lightboxImg" src="" alt="">
-    <div class="lightbox-nav lightbox-next" id="lightboxNext"><i class="fas fa-chevron-right"></i></div>
-    <div class="lightbox-counter" id="lightboxCounter"></div>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true">
+  <button class="icon-btn lightbox-close" id="lightboxClose" type="button" aria-label="Zatvori"><i class="fas fa-times"></i></button>
+  <div class="lightbox-nav lightbox-prev" id="lightboxPrev" role="button" tabindex="0" aria-label="Prethodna"><i class="fas fa-chevron-left"></i></div>
+  <img class="lightbox-img" id="lightboxImg" src="" alt="">
+  <div class="lightbox-nav lightbox-next" id="lightboxNext" role="button" tabindex="0" aria-label="Sledeća"><i class="fas fa-chevron-right"></i></div>
+  <div class="lightbox-counter" id="lightboxCounter"></div>
 </div>
-<div class="toast" id="toast"><i class="fas fa-check-circle"></i><span id="toastMsg"></span></div>
-<a href="https://wa.me/381XXXXXXXXX" class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-<script src="script.js"></script>
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-    const FEATURED_IDS = ['lozovaca','sljivovica','sljivovica-prepecena'];
-    renderProducts('productsGridHome', p => FEATURED_IDS.includes(p.id));
-});
-</script>
+<div class="toast" id="toast" role="alert"><i class="fas fa-check-circle"></i><span id="toastMsg"></span></div>
+
+  <script src="script.js"></script>
 </body>
 </html>
